@@ -21,12 +21,13 @@
 
 
 module comparator(
+    input clk,
     input  [7:0] threshold,
     input  [3:0] tolerance,
     input  [7:0] temperature,
     output reg turn_on
     );
-always_comb @(temperature) begin
+always @(posedge clk) begin
     if(temperature > (threshold+tolerance))begin
         turn_on <= 0;
     end

@@ -28,7 +28,7 @@ module top(
     output logic ready
     );
     
-logic [7:0] trheshold_out;
+logic [7:0] threshold_out;
 logic [7:0] trheshold_data_in;
 logic [3:0] tolerance_out;
 logic [3:0] tolerance_data_in;
@@ -52,7 +52,8 @@ tolerance_ff tolerance_ff(tolerance_data_in,
                           rst,
                           tolerance_out);
 
-comparator comparator(threshold_out,
+comparator comparator(clk,
+                     threshold_out,
                       tolerance_out,
                       temperature_out,
                       comparator_out);                          
