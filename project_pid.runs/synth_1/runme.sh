@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/matheus/Documents/project_pid/project_pid.runs/synth_1'
+HD_PWD='C:/Users/matheus/Documents/temp_crtl_pid/project_pid.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log threshold_ff.vds -m64 -mode batch -messageDb vivado.pb -notrace -source threshold_ff.tcl
+EAStep vivado -log top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top.tcl

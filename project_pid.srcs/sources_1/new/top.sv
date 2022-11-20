@@ -29,33 +29,33 @@ module top(
     );
     
 logic [7:0] threshold_out;
-logic [7:0] trheshold_data_in;
+logic [7:0] threshold_data_in;
+logic enable_threshold;
 logic [3:0] tolerance_out;
 logic [3:0] tolerance_data_in;
+logic enable_tolerance;
 logic comparator_out;
 
 logic [7:0] temperature_out;
 
 
-
-always_ff @(posedge clk) begin
-
-end
     
-threshold_ff threshold_ff(trheshold_data_in,
+threshold_ff threshold_ff(threshold_data_in,
                           clk,
                           rst,
+                          enable_threshold,
                           threshold_out);
                               
 tolerance_ff tolerance_ff(tolerance_data_in,
                           clk,
                           rst,
+                          enable_tolerance,
                           tolerance_out);
 
 comparator comparator(clk,
                      threshold_out,
-                      tolerance_out,
-                      temperature_out,
+                     tolerance_out,
+                     temperature_out,
                       comparator_out);                          
 
 endmodule

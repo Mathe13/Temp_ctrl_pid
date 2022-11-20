@@ -28,10 +28,13 @@ module comparator(
     output reg turn_on
     );
 always @(posedge clk) begin
-    if(temperature > (threshold+tolerance))begin
+    logic max_lim = threshold+tolerance;
+    logic min_lim = threshold-tolerance;
+
+    if(temperature > max_lim)begin
         turn_on <= 0;
     end
-    else if(temperature < (threshold-tolerance)) begin
+    else if(temperature < min_lim) begin
         turn_on <= 1;
     end
 end

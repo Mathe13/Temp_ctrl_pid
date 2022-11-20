@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log threshold_ff.vds -m64 -mode batch -messageDb vivado.pb -notrace -source threshold_ff.tcl" );
+         "-log top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top.tcl" );
 
 
 

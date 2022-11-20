@@ -23,15 +23,16 @@ module threshold_ff(
   input  [7:0] data,
   input  clk, 
   input  reset,
+  input logic enable,
   output reg[7:0] q    //SystemVerilog logic is preferred over reg
 );
 
 
 always_ff @(posedge clk) begin
   if (reset) begin
-    q <= 8'b00000000;
+    q <= 8'b00011001;
   end
-  else begin
+  else if(enable == 1) begin
     q <= data;
   end
 end

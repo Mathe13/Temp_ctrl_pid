@@ -2,11 +2,11 @@
 # Vivado v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Tue Nov 15 10:28:23 2022
-# Process ID: 12716
-# Current directory: C:/Users/matheus/Documents/project_pid/project_pid.runs/synth_1
-# Command line: vivado.exe -log threshold_ff.vds -mode batch -messageDb vivado.pb -notrace -source threshold_ff.tcl
-# Log file: C:/Users/matheus/Documents/project_pid/project_pid.runs/synth_1/threshold_ff.vds
-# Journal file: C:/Users/matheus/Documents/project_pid/project_pid.runs/synth_1\vivado.jou
+# Start of session at: Sun Nov 20 13:31:24 2022
+# Process ID: 14304
+# Current directory: C:/Users/matheus/Documents/temp_crtl_pid/project_pid.runs/synth_1
+# Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/matheus/Documents/temp_crtl_pid/project_pid.runs/synth_1/top.vds
+# Journal file: C:/Users/matheus/Documents/temp_crtl_pid/project_pid.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source threshold_ff.tcl -notrace
+source top.tcl -notrace
