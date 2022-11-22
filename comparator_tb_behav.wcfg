@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="comparator_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="comparator_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="50000000fs"></ZoomStartTime>
+      <ZoomEndTime time="281500001fs"></ZoomEndTime>
+      <Cursor1Time time="118500000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/comparator_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comparator_tb/tolerance_out" type="array">
+      <obj_property name="ElementShortName">tolerance_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tolerance_out[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comparator_tb/threshold_out" type="array">
+      <obj_property name="ElementShortName">threshold_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">threshold_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comparator_tb/temperature_out" type="array">
+      <obj_property name="ElementShortName">temperature_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">temperature_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comparator_tb/comparator_out" type="logic">
+      <obj_property name="ElementShortName">comparator_out</obj_property>
+      <obj_property name="ObjectShortName">comparator_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comparator_tb/comparator/max_lim" type="array">
+      <obj_property name="ElementShortName">max_lim[7:0]</obj_property>
+      <obj_property name="ObjectShortName">max_lim[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/comparator_tb/comparator/min_lim" type="array">
+      <obj_property name="ElementShortName">min_lim[7:0]</obj_property>
+      <obj_property name="ObjectShortName">min_lim[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -30,7 +30,7 @@ module tolerance_ff(
 
 always_ff @(posedge clk) begin
   if (reset) begin
-    q <= 3'b1010;
+    q <= 4'b1010;
   end
   else if(enable == 1) begin
     q <= data;

@@ -37,9 +37,19 @@ comparator comparator(clk,
 initial begin
     clk = 0;
     #10
-    temperature_out = "00000000"; 
-    #10
-    temperature_out = "11111111"; 
+    threshold_out   = 8'b10100; /*20*/
+    tolerance_out   = 4'b1010;  /*10*/
+    temperature_out = 8'b11110;; /*30*/
+    #20
+    temperature_out = 8'b1; /*23*/
+    #30
+    temperature_out = 8'b111; /*7*/
+    #20
+    temperature_out = 8'b11110;; /*30*/
+    tolerance_out   = 4'b0010;  /*2*/
+    #20
+    threshold_out   = 8'b11110; /*30*/
+
 
 
 
