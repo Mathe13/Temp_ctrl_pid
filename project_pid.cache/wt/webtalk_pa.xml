@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Nov 21 21:40:48 2022">
+<application name="pa" timeStamp="Sun Nov 27 23:28:26 2022">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="72e3d73bb78041cb95e1b9e4bb18b32a" type="ProjectID"/>
-<property name="ProjectIteration" value="9" type="ProjectIteration"/>
+<property name="ProjectIteration" value="10" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,137 +17,41 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="13" type="JavaHandler"/>
+<property name="AddSources" value="18" type="JavaHandler"/>
 <property name="CreateBlockDesign" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="5" type="JavaHandler"/>
+<property name="EditCopy" value="3" type="JavaHandler"/>
+<property name="EditDelete" value="6" type="JavaHandler"/>
+<property name="EditProperties" value="1" type="JavaHandler"/>
 <property name="EditUndo" value="16" type="JavaHandler"/>
+<property name="MoveToDesignSet" value="1" type="JavaHandler"/>
+<property name="MoveToSimSet" value="1" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="OpenProject" value="1" type="JavaHandler"/>
-<property name="ProjectSettingsCmdHandler" value="6" type="JavaHandler"/>
-<property name="RunImplementation" value="8" type="JavaHandler"/>
+<property name="OpenProject" value="3" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="8" type="JavaHandler"/>
+<property name="RunImplementation" value="9" type="JavaHandler"/>
 <property name="RunSchematic" value="6" type="JavaHandler"/>
-<property name="RunSynthesis" value="5" type="JavaHandler"/>
+<property name="RunSynthesis" value="9" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="4" type="JavaHandler"/>
 <property name="ShowSource" value="1" type="JavaHandler"/>
-<property name="ShowView" value="6" type="JavaHandler"/>
+<property name="ShowView" value="7" type="JavaHandler"/>
 <property name="SimulationClose" value="6" type="JavaHandler"/>
-<property name="SimulationRun" value="35" type="JavaHandler"/>
+<property name="SimulationRun" value="36" type="JavaHandler"/>
 <property name="ToggleViewNavigator" value="1" type="JavaHandler"/>
 <property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
 <property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="3" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="9" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="9" type="GuiResourceData"/>
+<property name="CANCEL, Cancel" value="1" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Run Synthesis], 20, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Simulation, sim_1, [VRFC 10-2063] Module comparator not found while processing module instance comparator [C:/Users/matheus/Documents/temp_crtl_pid/project_pid.srcs/sim_1/new/comparator_tb.sv:33]. ], 15, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Simulation, sim_1], 14" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectTab_RELOAD, Reload" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="6" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_YES, Yes" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 112, 180" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 118, 104" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 122, 83" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 146, 104" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 177, 45" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 191, 68" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 191, 68, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 192, 70" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 195, 62" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 196, 153" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 219, 98" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 279, 22" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 287, 132" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 321, 10" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 324, 70" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 341, 67" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 350, 55" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 37, 96" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 372, 38" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 395, 187" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 423, 60" value="2" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 43, 123" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 45, 100" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 48, 184" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 519, 41" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 56, 206" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 575, 63" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 60, 105" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 81, 162" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 85, 160" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 93, 93" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, comparator_tb_behav.wcfg" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, threshold_out[7:0]], 2" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, tolerance_out[3:0], [0]], 5, false" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, tolerance_out[3:0]], 1" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 107, 451" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 126, 281" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 126, 281, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 140, 390" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 153, 436" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 162, 264" value="2" type="GuiResourceData"/>
-<property name="comparator.sv, 166, 167" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 167, 179" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 39, 368" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 39, 368, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 43, 368" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 43, 368, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 44, 349" value="1" type="GuiResourceData"/>
-<property name="comparator.sv, 44, 349, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 110, 145" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 113, 111" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 152, 140" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 152, 297" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 153, 260" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 154, 209" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 154, 296" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 155, 176" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 156, 246" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 157, 124" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 158, 210" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 159, 247" value="2" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 159, 247, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 160, 110" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 162, 227" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 163, 111" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 163, 172" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 163, 178" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 167, 229" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 170, 184" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 174, 130" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 175, 76" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 175, 76, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 177, 181" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 177, 181, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 179, 57" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 179, 57, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 180, 429" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 180, 429, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 183, 97" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 183, 98" value="4" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 183, 98, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 183, 99" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 193, 180" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 214, 109" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 243, 299" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 245, 264" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 269, 183" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 279, 400" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 41, 234" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 43, 112" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 44, 198" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 46, 165" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 472, 177" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 503, 70" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 56, 437" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 63, 145" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 63, 145, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 71, 159" value="1" type="GuiResourceData"/>
-<property name="comparator_tb.sv, 71, 159, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Synthesis Settings], 19, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.StateMonitor_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.StateMonitor_RESET_RUN, Reset Run" value="1" type="GuiResourceData"/>
+<property name="top.sv, 305, 129" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="3" type="GuiMode"/>
+<property name="GuiMode" value="2" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="1" type="TclMode"/>
 </item>

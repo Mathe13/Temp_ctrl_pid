@@ -11,15 +11,16 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/matheus/Documents/temp_crtl_pid/project_pid.cache/wt [current_project]
-set_property parent.project_path C:/Users/matheus/Documents/temp_crtl_pid/project_pid.xpr [current_project]
+set_property webtalk.parent_dir D:/Xilinx2016/Projetos_UERGS/Temp_ctrl_pid/project_pid.cache/wt [current_project]
+set_property parent.project_path D:/Xilinx2016/Projetos_UERGS/Temp_ctrl_pid/project_pid.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/matheus/Documents/temp_crtl_pid/project_pid.srcs/sources_1/new/comparator.sv
-  C:/Users/matheus/Documents/temp_crtl_pid/project_pid.srcs/sources_1/new/threshold_ff.sv
-  C:/Users/matheus/Documents/temp_crtl_pid/project_pid.srcs/sources_1/new/tolerance_ff.sv
-  C:/Users/matheus/Documents/temp_crtl_pid/project_pid.srcs/sources_1/new/top.sv
+  D:/Xilinx2016/Projetos_UERGS/Temp_ctrl_pid/project_pid.srcs/sources_1/new/xadc.sv
+  D:/Xilinx2016/Projetos_UERGS/Temp_ctrl_pid/project_pid.srcs/sources_1/new/tolerance_ff.sv
+  D:/Xilinx2016/Projetos_UERGS/Temp_ctrl_pid/project_pid.srcs/sources_1/new/threshold_ff.sv
+  D:/Xilinx2016/Projetos_UERGS/Temp_ctrl_pid/project_pid.srcs/sources_1/new/comparator.sv
+  D:/Xilinx2016/Projetos_UERGS/Temp_ctrl_pid/project_pid.srcs/sources_1/new/top.sv
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp

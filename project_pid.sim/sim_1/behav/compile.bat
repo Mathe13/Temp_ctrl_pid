@@ -1,5 +1,5 @@
 @echo off
-set xv_path=C:\\Xilinx\\Vivado\\2016.1\\bin
+set xv_path=D:\\Xilinx2016\\Vivado\\2016.1\\bin
 echo "xvlog -m64 --relax -prj comparator_tb_vlog.prj"
 call %xv_path%/xvlog  -m64 --relax -prj comparator_tb_vlog.prj -log xvlog.log
 call type xvlog.log > compile.log

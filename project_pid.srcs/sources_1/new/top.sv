@@ -37,9 +37,10 @@ logic enable_tolerance;
 logic comparator_out;
 
 logic [7:0] temperature_out;
+logic vn_in;
+logic vp_in;
+logic [15:0] voltage_out;
 
-
-    
 threshold_ff threshold_ff(threshold_data_in,
                           clk,
                           rst,
@@ -57,5 +58,11 @@ comparator comparator(clk,
                      tolerance_out,
                      temperature_out,
                       comparator_out);                          
+
+xadc xadc(
+    clk,
+    vn_in,
+    vp_in,
+    voltage_out);
 
 endmodule

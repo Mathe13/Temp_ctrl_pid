@@ -28,10 +28,24 @@ module xadc(
     );
     
 logic diff_voltage;
+logic temperature;
+
+// pegar a tensao de entrada e colocar numa função da temperatura (simular com reta inicial)
+// depois converter o resultado dentro de uma faixa de bits para saida
 
 always @(posedge clk) begin
     diff_voltage <= vp_in - vn_in;
+    temperature <= 4 * diff_voltage + 7; // função de exemplo
     
+    if (temperature > 100) begin // limite máximo
+       temperature <= 100; 
+    end
+    
+    else if (temperature < 0) begin // limite mínimo
+        temperature <= 0;
+    end
+    
+    // voltage_out <= temperature; // testar formas de converter para binario
 end
 
 endmodule
